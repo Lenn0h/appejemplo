@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      App Ejemplo
+    </ion-title>
+    <ion-icon name="home" slot="end" color="primary" class="ion-padding"></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-text color="slot">
+    <h1>Este es el index</h1>
+  </ion-text>
+  <ion-button  expand="success" routerLink="../pag2">
+    To page 2
+  </ion-button>
+  <ion-button expand="block" color="warning" routerLink="../pag3">
+    To page 3
+  </ion-button>
+</ion-content>
+
+<ion-footer >
+  <ion-toolbar color="tertiary" >
+    <ion-text slot="end" class="ion-padding">
+      <p>This is footer</p>
+    </ion-text>
+  </ion-toolbar>
+</ion-footer>
