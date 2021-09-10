@@ -1,3 +1,36 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title >Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-menu-toggle>
+        <ion-list *ngFor="let item of opciones" >
+          <ion-item [routerLink]="item.link" detail>
+            <ion-icon slot="start" [name]="item.icono" color="dark"></ion-icon>
+            {{item.texto}}
+          </ion-item>
+          <!-- <ion-item routerLink="home" detail>
+            <ion-icon slot="start" name="home"></ion-icon>
+            Home
+          </ion-item>
+          <ion-item routerLink="pag2" detail>
+            <ion-icon slot="start" name="List"></ion-icon>
+            Listas
+          </ion-item>
+          <ion-item routerLink="pag3" detail>
+            <ion-icon slot="start" name="person"></ion-icon>
+            Personal
+          </ion-item>
+          <ion-item routerLink="pag4" detail>
+            <ion-icon slot="start" name="logo-xbox"></ion-icon>
+            Juegos
+          </ion-item> -->
+        </ion-list>
+    </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
