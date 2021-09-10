@@ -13,8 +13,6 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log('Hola');
-    console.log(this.fecha);
   }
 
 }
