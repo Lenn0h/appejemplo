@@ -9,9 +9,20 @@
 <app-encabezado titulo="Pagina 3" icono="person"></app-encabezado>
 
 <ion-content>
-  <ion-text color="primary">
-    <h1>This is the third page</h1>
-  </ion-text>
+  <ion-item *ngFor="let item of [1,1,1,1]" lines="none" >
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Wacoldo</ion-card-title>
+        <ion-card-subtitle>Wacoldo History</ion-card-subtitle>
+        <ion-img src="../assets/images/persona.jpg"></ion-img>
+      </ion-card-header>
+    
+      <ion-card-content>
+        Keep close to Nature's heart... and break clear away, once in awhile,
+        and climb a mountain or spend a week in the woods. Wash your spirit clean.
+      </ion-card-content>
+    </ion-card>
+</ion-item>
 </ion-content>
 
 <app-footer></app-footer>
