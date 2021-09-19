@@ -26,7 +26,7 @@
         <p>Formulario es invalido?: {{miform.invalid}}</p>
     </ion-text>
     <!---->
-    <form  #miform="ngForm" (ngSubmit)="sumarForm()">
+    <form  #miform="ngForm" (ngSubmit)="sumarForm(miform)">
         <ion-item>
             <ion-label position="floating">Ingrese un número</ion-label>
              <ion-input placeholder="Ingresa solo números" type="number" [(ngModel)]="x" name="numx" required></ion-input>

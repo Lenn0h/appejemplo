@@ -36,8 +36,9 @@ export class InputsPage implements OnInit {
     console.log('onDidDismiss resolved with role', role);
   }
 
-  async sumarForm()
+  async sumarForm(miform)
   {
+    console.log(miform);
     const alert = await this.alertController.create({
       header: 'Resulta de la suma con Formulario',
       message: (this.x+this.y).toString(),
