@@ -25,8 +25,8 @@ export class AppComponent {
       icono:'person'
     },
     {
-      link:'pag4',
-      texto:'Juegos',
+      link:'inputs',
+      texto:'Uso de inputs',
       icono:'logo-xbox'
     }
   ];

@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'pag4',
     loadChildren: () => import('./pages/pag4/pag4.module').then( m => m.Pag4PageModule)
   },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./pages/inputs/inputs.module').then( m => m.InputsPageModule)
+  },
 ];
 
 @NgModule({
