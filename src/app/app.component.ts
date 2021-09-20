@@ -28,6 +28,11 @@ export class AppComponent {
       link:'inputs',
       texto:'Uso de inputs',
       icono:'logo-xbox'
+    },
+    {
+      link:'logins',
+      texto:'Login',
+      icono:'power'
     }
   ];
   constructor() {}

@@ -11,7 +11,16 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-text color="slot">
+  <ion-text color="primary">
+    <h1>Pagina de Inicio</h1>
+  </ion-text>
+
+  <ion-text color="primary">
+    <h3 *ngIf="miuser===''" >Desconocido</h3>
+    <h3 *ngIf="miuser!==''" >Bienvenido: {{miuser}}</h3>
+
+  </ion-text>
+  <!-- <ion-text color="slot">
     <h1>Este es el index</h1>
   </ion-text>
   <ion-button  expand="success" routerLink="../pag2">
@@ -22,7 +31,7 @@
   </ion-button>
   <ion-button expand="block" color="dark" shape="round" routerLink="../pag4">
     Entrar a la pagina 4
-  </ion-button>
+  </ion-button> -->
 </ion-content>
 
 <app-footer></app-footer>
