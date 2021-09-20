@@ -46,7 +46,7 @@ export class LoginsPage implements OnInit {
 
   async presentAlert() {
     const alert = await this.alertController.create({
-      cssClass: 'my-custom-class',
+      cssClass: 'miclase',
       header: 'Error',
       subHeader: 'No se puede iniciar sesión',
       message: 'Reingrese usuario y/o contraseña',
